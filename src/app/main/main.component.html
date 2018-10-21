@@ -1,0 +1,15 @@
+<h1>
+  My ToDoList
+</h1>
+<button  (click)="logout()" class="btn_sign">Sign out</button>
+<div class="main_container">
+    <img src="assets/images/icon29.png" (click)="add_item()" class="add">
+  <input type="text" id="myInput" placeholder="Add your todo"[(ngModel)]="item" >
+  <div *ngFor="let name of list_values"  class="main">
+    <li  id="li_it">
+      <input type="radio" class="Checkbox" name="a_check" id="chk" (click)="select_item(name)">{{name}}
+      <img src="assets/images/trash.png" (click)="delete_item(name)" class="delete">
+      <img src="assets/images/set.png" (click)="edit_item(name)" class="update">
+    </li>
+  </div>
+</div>

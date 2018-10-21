@@ -1,0 +1,8 @@
+<div class="login_container">
+  <form  id="login">
+      <div><label class="head">Login First</label></div>
+      <input type="text"  placeholder="Username" name="username" [(ngModel)]="username"  onclick="this.focus();this.select()"><br>
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="password"  onclick="this.focus();this.select()"><br>
+      <br><button id="submit"  class="btn" (click)="do_login()">Login</button>
+  </form>
+</div>
