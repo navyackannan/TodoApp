@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "todo"
+    "name": "whotel-ems"
   },
   "apps": [
     {
@@ -20,8 +20,12 @@
       "prefix": "app",
       "styles": [
         "styles.css"
+        
       ],
       "scripts": [],
+      "types": [
+        "jasmine"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -55,6 +59,13 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    
+    "component": { 
+      "properties": {
+      "spec": {   
+        "default": false
+      }
+    }
+  }
   }
 }
